@@ -65,9 +65,6 @@ it('does not submit if user tries to submit a duplicate todo', () => {
     expect(store.getState().todos.length).toBe(1);
 })
 
-
-
-
 describe('error message', () => {
     it('displays a warning message when a duplicate todo is submitted', () => {
         const todos = [{ name: 'x', completed: false }]

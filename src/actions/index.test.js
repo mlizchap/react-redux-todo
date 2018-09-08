@@ -1,5 +1,5 @@
 import { storeFactory } from '../testUtils';
-import { createTodo, markcomplete } from './';
+import { createTodo, markComplete } from './';
 
 // dispatch createUser and test state 
 it('when createTodo is dispatched, state is updated', () => {
@@ -14,6 +14,12 @@ it('when createTodo is dispatched, state is updated', () => {
 })
 
 // dispatch markcomplete and test state 
-xit('when markComplete is dispatched, state is updated', () => {
-
+it('when markComplete is dispatched, state is updated', () => {
+    const store = storeFactory({todos: [{ name: 'x', completed: false }]});
+    store.dispatch(markComplete('x'));
+    const expectedState = [{
+        name: 'x',
+        completed: true
+    }]
+    expect(store.getState().todos).toEqual(expectedState);
 })

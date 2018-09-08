@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Todo from '../Todo/Todo';
+import './TodoList.scss';
 
 class TodoList extends Component {
     constructor(props) {

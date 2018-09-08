@@ -10,7 +10,7 @@ export class Todo extends Component {
         this.todo = React.createRef();
     }
     handleComplete = () => {
-        this.props.completed ? this.todo.current.style.textDecoration = 'none' : this.todo.current.style.textDecoration = 'line-through'
+        this.props.completed ? this.todo.current.style.textDecoration = 'none' : this.todo.current.style.textDecoration = 'line-through #424242'
         
         this.props.markComplete(this.props.name);
     }
@@ -20,7 +20,6 @@ export class Todo extends Component {
                 ref={this.todo}
                 className="todo-component" 
                 onClick={this.handleComplete}
-                //style={(this.props.completed) ? {color: 'red'} : {color: 'blue'}}
             >
                 {this.props.name}
             </div>

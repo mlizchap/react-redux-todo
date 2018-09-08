@@ -41,7 +41,7 @@ class AddForm extends Component {
                     value="add"
                 />
                 <div className="addform-component__error-message">
-                {(this.state.error) ? <div className="error-message">Todo Already Exists!</div> : <div>&nbsp;</div> }
+                {(this.state.error) ? <div className="error-message">Todo already exists!</div> : <div>&nbsp;</div> }
                 </div>
             </form>
         )

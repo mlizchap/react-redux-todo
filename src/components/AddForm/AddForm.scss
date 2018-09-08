@@ -6,11 +6,7 @@
     width: 100%;
     margin-top: 70px;
     // margin-right: auto;
-    
-    
-}
-
-.addform-component__input {
+   &__input {
     flex: 1;
     width:80%;
     font-family: inherit;
@@ -19,7 +15,7 @@
     //flex: 1 0 120px;
     //width: 100%;
     max-width: 500px;
-    //font-size: 25pt;
+    font-size: 22pt;
     outline: none;
     // align-self: flex-end;
     background-color: inherit;
@@ -30,9 +26,8 @@
     padding: 0;
     margin: 0;
     // font-family: inherit;
-
-}
-.addform-component__submit-button {
+   } 
+   &__submit-button {
     width: 20%;
     background-color: inherit;
     border: none;
@@ -40,14 +35,25 @@
     color: inherit;
     font-size: 25pt;
     padding-bottom: 0;
+    &:focus {
+        color: #fff99f;
+        outline: none;
+    }
+    &:hover {
+        color: #fff99f;
+        cursor: pointer;
+    }
+   }
+   &__error-message {
+    height: 20px;
+    text-align: left;
+    color: rgb(255, 136, 136);
+    font-size: 10pt;
+   }
+    
 }
 
-.addform-component__error-message {
-    // background-color: aqua;
-    // flex-basis: 100%
-}
-.error-message {
-    text-align: left;
-    color: red;
-    font-size: 10pt;
-}
+
+
+
+

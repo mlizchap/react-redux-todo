@@ -4,22 +4,9 @@ import { mount, shallow } from 'enzyme';
 import { storeFactory } from '../../testUtils';
 
 
-let wrapper;
-beforeEach(() => {
-    //const store = storeFactory();
-    wrapper = shallow(<App />);
+it('renders the app to the screen', () => {
+    const wrapper = shallow(<App />);
+    const appComponent = wrapper.find('.component-app');
+    expect(appComponent.length).toBe(1);
 })
 
-xit('renders the header to the screen', () => {
-    wrapper.find('.component-header');
-    console.log(wrapper.debug())
-})
-
-// it('renders the todolist to the screen', () => {
-//     //const todoListComponent = wrapper.find('.component-todolist')
-//     //expect(todoListComponent.length).toBe(1);
-// });
-
-// it('renders the add form to the screen', () => {
-
-// })

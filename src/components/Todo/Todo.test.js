@@ -21,12 +21,4 @@ it('is connected to the markComplete action creator prop', () => {
     expect(completeProp).toBeInstanceOf(Function);
 });
 
-describe('when item is clicked', () => {
-    it('is crossed out when the state is incomplete(changed to complete)', () => {
-        const store = storeFactory({ name: 'x', });
-        const wrapper = mount(<Provider store={store}><Todo /></Provider>);
-
-    })
-    it('is uncrossed when the state is complete (changed to incomplete')
-})
 
