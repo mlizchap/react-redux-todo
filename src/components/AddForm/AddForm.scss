@@ -1,0 +1,53 @@
+.addform-component {
+    //display: flex;
+    //flex: 1;
+    text-align: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 70px;
+    // margin-right: auto;
+    
+    
+}
+
+.addform-component__input {
+    flex: 1;
+    width:80%;
+    font-family: inherit;
+    font-size: 16pt;
+    color: inherit;
+    //flex: 1 0 120px;
+    //width: 100%;
+    max-width: 500px;
+    //font-size: 25pt;
+    outline: none;
+    // align-self: flex-end;
+    background-color: inherit;
+    border: none;
+    border-bottom: 4px solid #2d2e3a;
+    ;
+    margin-right: 15px;
+    padding: 0;
+    margin: 0;
+    // font-family: inherit;
+
+}
+.addform-component__submit-button {
+    width: 20%;
+    background-color: inherit;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: 25pt;
+    padding-bottom: 0;
+}
+
+.addform-component__error-message {
+    // background-color: aqua;
+    // flex-basis: 100%
+}
+.error-message {
+    text-align: left;
+    color: red;
+    font-size: 10pt;
+}
