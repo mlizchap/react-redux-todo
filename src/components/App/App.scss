@@ -6,7 +6,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(bottom, #31ffcb 0%, #544adf 100%);
+
 }
 
 .component-app {
@@ -20,12 +20,15 @@ html, body {
     //background-image: linear-gradient(bottom, #31ffcb 0%, #544adf 100%);
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(bottom, #31ffcb 0%, #544adf 100%);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .component-app__container {
     flex: 1;
     // background-color: lightsalmon;
-    width: 50%;
+    // width: 50%;
     max-width: 500px;
     margin-right:auto;
     margin-left: auto;
